@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PathsEnvariament")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7af551b91277f45af0d5fbc902aff3fecdb0713f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("PathsEnvariament")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PathsEnvariament")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

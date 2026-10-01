@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\AhmadAlDibo-WORKSPACE\\MyTools\\Aplicatios-software-tools\\Console-Aplications\\Short-Paths\\PathsEnvariament\\PathsEnvariament.csproj",
+      "projectUniqueName": "D:\\AhmadAlDibo-WORKSPACE\\MyTools\\Aplicatios-software-tools\\Console-Aplications\\Short-Paths\\PathsEnvariament.csproj",
       "projectName": "PathsEnvariament",
-      "projectPath": "D:\\AhmadAlDibo-WORKSPACE\\MyTools\\Aplicatios-software-tools\\Console-Aplications\\Short-Paths\\PathsEnvariament\\PathsEnvariament.csproj",
+      "projectPath": "D:\\AhmadAlDibo-WORKSPACE\\MyTools\\Aplicatios-software-tools\\Console-Aplications\\Short-Paths\\PathsEnvariament.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "D:\\AhmadAlDibo-WORKSPACE\\MyTools\\Aplicatios-software-tools\\Console-Aplications\\Short-Paths\\PathsEnvariament\\obj\\",
+      "outputPath": "D:\\AhmadAlDibo-WORKSPACE\\MyTools\\Aplicatios-software-tools\\Console-Aplications\\Short-Paths\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
