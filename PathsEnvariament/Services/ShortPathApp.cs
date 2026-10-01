@@ -32,7 +32,7 @@ public sealed class ShortPathApp
             Console.Write($"{promptPrefix}{modePrefix}{Environment.CurrentDirectory}> ");
             Console.ResetColor();
 
-            var input = Console.ReadLine();
+            var input = CommandInputReader.Read();
             if (string.IsNullOrWhiteSpace(input))
             {
                 continue;
@@ -40,8 +40,7 @@ public sealed class ShortPathApp
 
             try
             {
-                var (command, argument) = CommandParser.Parse(input);
-                ExecuteCommand(command, argument);
+                ExecuteInput(input);
             }
             catch (UnauthorizedAccessException)
             {
@@ -56,6 +55,72 @@ public sealed class ShortPathApp
                 ConsoleUi.WriteError($"Error: {ex.Message}");
             }
         }
+    }
+
+    private void ExecuteInput(string input)
+    {
+        var normalizedInput = input.Replace("\r\n", "\n", StringComparison.Ordinal).Replace('\r', '\n');
+        var lines = normalizedInput.Split('\n');
+        if (lines.Length == 1)
+        {
+            var (command, argument) = CommandParser.Parse(lines[0]);
+            ExecuteWithDeveloperOutput(command, argument);
+            return;
+        }
+
+        var (firstCommand, firstArgument) = CommandParser.Parse(lines[0]);
+        if (firstCommand == "cmd")
+        {
+            var commandScript = string.Join(Environment.NewLine, new[] { firstArgument }.Concat(lines.Skip(1)));
+            ExecuteWithDeveloperOutput("cmd", commandScript);
+            return;
+        }
+
+        foreach (var line in lines.Where(line => !string.IsNullOrWhiteSpace(line)))
+        {
+            var (command, argument) = CommandParser.Parse(line);
+            ExecuteWithDeveloperOutput(command, argument);
+        }
+    }
+
+    private void ExecuteWithDeveloperOutput(string command, string argument)
+    {
+        if (!ShouldVisualizeCommandOutput(command, argument))
+        {
+            ExecuteCommand(command, argument);
+            return;
+        }
+
+        var originalOutput = Console.Out;
+        using var capturedOutput = new StringWriter();
+        try
+        {
+            Console.SetOut(capturedOutput);
+            ExecuteCommand(command, argument);
+        }
+        finally
+        {
+            Console.SetOut(originalOutput);
+        }
+
+        DeveloperModeService.StreamCommandOutput(capturedOutput.ToString());
+    }
+
+    private bool ShouldVisualizeCommandOutput(string command, string argument)
+    {
+        if (!developerModeEnabled || command is "clear" or "cls" or "exit" or "stop"
+            or "add" or "toevoegen" or "edit" or "bewerken" or "delete" or "verwijder")
+        {
+            return false;
+        }
+
+        if (command != "dev")
+        {
+            return true;
+        }
+
+        var (developerCommand, _) = CommandParser.Parse(argument);
+        return developerCommand is not ("" or "on" or "off");
     }
 
     private void ExecuteCommand(string command, string argument)
@@ -175,6 +240,9 @@ public sealed class ShortPathApp
                 break;
             case "tools":
                 DeveloperModeService.ShowAvailableTools();
+                break;
+            case "generate":
+                ConsoleUi.WriteError("Voer een commando uit; developer mode animeert de echte opdrachtuitvoer.");
                 break;
             case "status":
                 WindowsCommandRunner.Run("git status" + (string.IsNullOrWhiteSpace(commandArguments) ? string.Empty : $" {commandArguments}"));

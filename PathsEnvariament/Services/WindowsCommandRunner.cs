@@ -1,5 +1,6 @@
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Text;
 
 namespace PathsEnvariament.Services;
 
@@ -13,12 +14,22 @@ public static class WindowsCommandRunner
             return;
         }
 
+        string? temporaryScriptPath = null;
         try
         {
+            var hasMultipleLines = commandText.Contains('\n') || commandText.Contains('\r');
+            var command = commandText;
+            if (hasMultipleLines)
+            {
+                temporaryScriptPath = Path.Combine(Path.GetTempPath(), $"ShortPaths-{Guid.NewGuid():N}.cmd");
+                File.WriteAllText(temporaryScriptPath, commandText, new UTF8Encoding(encoderShouldEmitUTF8Identifier: false));
+                command = $"\"{temporaryScriptPath}\"";
+            }
+
             var startInfo = new ProcessStartInfo
             {
                 FileName = "cmd.exe",
-                Arguments = $"/d /s /c \"{commandText}\"",
+                Arguments = $"/d /s /c \"{command}\"",
                 WorkingDirectory = Environment.CurrentDirectory,
                 RedirectStandardOutput = true,
                 RedirectStandardError = true,
@@ -64,6 +75,24 @@ public static class WindowsCommandRunner
         catch (Exception ex)
         {
             ConsoleUi.WriteError($"Error: {ex.Message}");
+        }
+        finally
+        {
+            if (temporaryScriptPath is not null)
+            {
+                try
+                {
+                    File.Delete(temporaryScriptPath);
+                }
+                catch (IOException)
+                {
+                    ConsoleUi.WriteError("The temporary CMD script could not be removed.");
+                }
+                catch (UnauthorizedAccessException)
+                {
+                    ConsoleUi.WriteError("Access denied while removing the temporary CMD script.");
+                }
+            }
         }
     }
 }

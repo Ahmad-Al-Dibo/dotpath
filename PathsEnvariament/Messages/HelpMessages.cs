@@ -38,6 +38,11 @@ public static class HelpMessages
     dev [on|off|help|tools|<commando>]
         Developer mode en developer shortcuts
 
+    Shift+Enter
+        Nieuwe invoerregel; Enter voert de invoer uit
+        Plak meerdere commando's om ze na elkaar uit te voeren
+        Begin met 'cmd' voor een meerregelig CMD-script
+
     clear / cls
         Console leegmaken
 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\AhmadAlDibo-WORKSPACE\\MyTools\\Aplicatios-software-tools\\Console-Aplications\\Short-Paths\\PathsEnvariament\\PathsEnvariament.csproj": {}
+    "D:\\AhmadAlDibo-WORKSPACE\\MyTools\\Aplicatios-software-tools\\Console-Aplications\\Short-Paths\\PathsEnvariament\\PathsEnvariament.csproj": {}
   },
   "projects": {
-    "d:\\AhmadAlDibo-WORKSPACE\\MyTools\\Aplicatios-software-tools\\Console-Aplications\\Short-Paths\\PathsEnvariament\\PathsEnvariament.csproj": {
+    "D:\\AhmadAlDibo-WORKSPACE\\MyTools\\Aplicatios-software-tools\\Console-Aplications\\Short-Paths\\PathsEnvariament\\PathsEnvariament.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\AhmadAlDibo-WORKSPACE\\MyTools\\Aplicatios-software-tools\\Console-Aplications\\Short-Paths\\PathsEnvariament\\PathsEnvariament.csproj",
+        "projectUniqueName": "D:\\AhmadAlDibo-WORKSPACE\\MyTools\\Aplicatios-software-tools\\Console-Aplications\\Short-Paths\\PathsEnvariament\\PathsEnvariament.csproj",
         "projectName": "PathsEnvariament",
-        "projectPath": "d:\\AhmadAlDibo-WORKSPACE\\MyTools\\Aplicatios-software-tools\\Console-Aplications\\Short-Paths\\PathsEnvariament\\PathsEnvariament.csproj",
+        "projectPath": "D:\\AhmadAlDibo-WORKSPACE\\MyTools\\Aplicatios-software-tools\\Console-Aplications\\Short-Paths\\PathsEnvariament\\PathsEnvariament.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "d:\\AhmadAlDibo-WORKSPACE\\MyTools\\Aplicatios-software-tools\\Console-Aplications\\Short-Paths\\PathsEnvariament\\obj\\",
+        "outputPath": "D:\\AhmadAlDibo-WORKSPACE\\MyTools\\Aplicatios-software-tools\\Console-Aplications\\Short-Paths\\PathsEnvariament\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -22,6 +22,8 @@ public static class DeveloperMessages
         dev code <args>
 
     Voorbeeld: dev git log --oneline -5
+    In developer mode worden echte commando-uitvoeren als subword-tokens getoond.
+    De oorspronkelijke uitvoer en witruimte blijven behouden.
 
     """;
 }
