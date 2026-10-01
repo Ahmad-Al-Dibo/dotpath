@@ -1,0 +1,15 @@
+D:\AhmadAlDibo-WORKSPACE\MyTools\Aplicatios-software-tools\Console-Aplications\Short-Paths\bin\Debug\net10.0\dotpath.exe
+D:\AhmadAlDibo-WORKSPACE\MyTools\Aplicatios-software-tools\Console-Aplications\Short-Paths\bin\Debug\net10.0\dotpath.deps.json
+D:\AhmadAlDibo-WORKSPACE\MyTools\Aplicatios-software-tools\Console-Aplications\Short-Paths\bin\Debug\net10.0\dotpath.runtimeconfig.json
+D:\AhmadAlDibo-WORKSPACE\MyTools\Aplicatios-software-tools\Console-Aplications\Short-Paths\bin\Debug\net10.0\dotpath.dll
+D:\AhmadAlDibo-WORKSPACE\MyTools\Aplicatios-software-tools\Console-Aplications\Short-Paths\bin\Debug\net10.0\dotpath.pdb
+D:\AhmadAlDibo-WORKSPACE\MyTools\Aplicatios-software-tools\Console-Aplications\Short-Paths\obj\Debug\net10.0\dotpath.GeneratedMSBuildEditorConfig.editorconfig
+D:\AhmadAlDibo-WORKSPACE\MyTools\Aplicatios-software-tools\Console-Aplications\Short-Paths\obj\Debug\net10.0\dotpath.AssemblyInfoInputs.cache
+D:\AhmadAlDibo-WORKSPACE\MyTools\Aplicatios-software-tools\Console-Aplications\Short-Paths\obj\Debug\net10.0\dotpath.AssemblyInfo.cs
+D:\AhmadAlDibo-WORKSPACE\MyTools\Aplicatios-software-tools\Console-Aplications\Short-Paths\obj\Debug\net10.0\dotpath.csproj.CoreCompileInputs.cache
+D:\AhmadAlDibo-WORKSPACE\MyTools\Aplicatios-software-tools\Console-Aplications\Short-Paths\obj\Debug\net10.0\dotpath.sourcelink.json
+D:\AhmadAlDibo-WORKSPACE\MyTools\Aplicatios-software-tools\Console-Aplications\Short-Paths\obj\Debug\net10.0\dotpath.dll
+D:\AhmadAlDibo-WORKSPACE\MyTools\Aplicatios-software-tools\Console-Aplications\Short-Paths\obj\Debug\net10.0\refint\dotpath.dll
+D:\AhmadAlDibo-WORKSPACE\MyTools\Aplicatios-software-tools\Console-Aplications\Short-Paths\obj\Debug\net10.0\dotpath.pdb
+D:\AhmadAlDibo-WORKSPACE\MyTools\Aplicatios-software-tools\Console-Aplications\Short-Paths\obj\Debug\net10.0\dotpath.genruntimeconfig.cache
+D:\AhmadAlDibo-WORKSPACE\MyTools\Aplicatios-software-tools\Console-Aplications\Short-Paths\obj\Debug\net10.0\ref\dotpath.dll

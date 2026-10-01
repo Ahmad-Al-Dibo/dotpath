@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace PathsEnvariament.Services;
+namespace dotpath.Services;
 
 public static class CommandInputReader
 {

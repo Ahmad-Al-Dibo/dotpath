@@ -1,4 +1,4 @@
-namespace PathsEnvariament.Messages;
+namespace dotpath.Messages;
 
 public static class DeveloperMessages
 {

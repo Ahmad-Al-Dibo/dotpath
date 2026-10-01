@@ -1,4 +1,4 @@
-namespace PathsEnvariament.Models;
+namespace dotpath.Models;
 
 public sealed class SavedPath
 {

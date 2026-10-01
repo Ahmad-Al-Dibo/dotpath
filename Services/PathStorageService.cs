@@ -1,8 +1,8 @@
 using System.Text.Json;
-using PathsEnvariament.Configuration;
-using PathsEnvariament.Models;
+using dotpath.Configuration;
+using dotpath.Models;
 
-namespace PathsEnvariament.Services;
+namespace dotpath.Services;
 
 public static class PathStorageService
 {

@@ -1,6 +1,6 @@
-using PathsEnvariament.Models;
+using dotpath.Models;
 
-namespace PathsEnvariament.Services;
+namespace dotpath.Services;
 
 public static class PathResolver
 {

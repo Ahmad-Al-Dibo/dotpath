@@ -1,4 +1,4 @@
-namespace PathsEnvariament.Configuration;
+namespace dotpath.Configuration;
 
 public static class AppConfig
 {

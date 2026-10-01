@@ -1,4 +1,4 @@
-namespace PathsEnvariament.Services;
+namespace dotpath.Services;
 
 public static class CommandParser
 {

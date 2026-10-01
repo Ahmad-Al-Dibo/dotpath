@@ -1,8 +1,8 @@
 using System.Diagnostics;
-using PathsEnvariament.Models;
-using PathsEnvariament.Messages;
+using dotpath.Models;
+using dotpath.Messages;
 
-namespace PathsEnvariament.Services;
+namespace dotpath.Services;
 
 public sealed class ShortPathApp
 {

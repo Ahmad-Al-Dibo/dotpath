@@ -1,8 +1,8 @@
 using System.Globalization;
 using System.Text.RegularExpressions;
-using PathsEnvariament.Configuration;
+using dotpath.Configuration;
 
-namespace PathsEnvariament.Services;
+namespace dotpath.Services;
 
 public static class DeveloperModeService
 {
